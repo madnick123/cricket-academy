@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#header {
+    background-image: url('pictures/samarth-shirke-ghxL3qOfkPo-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.heading {
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.form{
+    width: 20%;
+    min-height: 8vh;
+    background-color:cadetblue;
+    margin-top: 55vh;
+    margin-left: 75vw;
+    padding: 1%;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.form a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    margin: auto 10px;
+    padding: 10px 50px;
+    font-weight:500;
+}
+
+.navigation a:hover {
+    background-color: #AD9274;
+    border-radius: 20px;
+}
+
+.intro {
+    background-image: url('pictures/yogendra-singh-ResjcGoMRRI-unsplash.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 150px;
+}
+
+.intro h2 {
+    color: brown;
+}
+
+.intro span {
+    color: grey;
+}
+
+#aboutUs {
+    background: lightgrey;
+    min-height: 50vh;
+    text-align: center;
+    padding: 50px;
+}
+
+#aboutUs h1 {
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+#gallery {
+    text-align: center;
+    align-items: center;
+    background: grey;
+    padding: 50px ;
+}
+
+#gallery h1 {
+    padding: 0 0 30px 0;
+    text-decoration: underline;
+}
+
+#gallery img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.pics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#pic {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 0 -10%;
+}
+
+#features {
+    min-height: 50vh;
+    background: lightgrey;
+    padding: 50px;
+    /* text-align: center; */
+}
+
+#features h1 {
+    padding: 0 0 30px 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#features h2 {
+    padding: 0 0 15px 0;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category {
+    width: 20%;
+    padding: 15px;
+    margin: 10px;
+    min-height: 70%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.category ul{
+    list-style-type: none;
+}
+
+.category li{
+    margin: 7px;
+}
+
+.category ol{
+    list-style-type: lower-roman;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.category a{
+    text-decoration: none;
+    /* background-color: purple; */
+    color: purple;
+    /* target: _blank; */
+    /* padding: 3px; */
+    /* border-radius: 5px; */
+}
+
+#contact {
+    background: grey;
+    min-height: 35vh;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+#contact h1 {
+    padding: 0 0 30px 0;
+    text-decoration: underline;
+}
+
+.fab{
+    color: red;
+    font-size: xx-large;
+    margin: 15px;
+}
+
+.fa-facebook {
+    color: blue;
+}
+@media only screen and (max-width: 740px) {
+     a { color: white }
+    .navigation{flex-direction: column;}
+    .intro{flex-wrap: wrap;}
+    .intro span { color: black; }
+    #gallery img { 
+        width: 40%;
+        margin: 10px; }
+    .categories{
+        flex-wrap: wrap;
+    }
+    .category{
+        width: 40%;
+    }
+
+    .form{
+        width: 20%;
+        min-height: 8vh;
+        background-color: cadetblue;
+        margin-top: 15vh;
+        margin-left: 70vw;
+        padding: 1%;
+        border-radius: 25px;
+        position: absolute;
+    }
+
+    .form a {
+        color: black;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+     a { color: white}
+    .navigation{flex-direction: column;}
+    .intro{flex-wrap: wrap;}
+    .intro span {
+        color: black;
+    }
+    #gallery img { 
+        width: 100%;
+        margin: 10px }
+    .category{
+        width: 100%;
+    }
+
+    .form{
+        min-width: 31%;
+        min-height: 8vh;
+        background-color: cadetblue;
+        margin-top: 25px;
+        margin-left: 60vw;
+        padding: 2%;
+        border-radius: 25px;
+        position: absolute;
+    }
+
+    .form a {
+        color: black;
+    }
+}
